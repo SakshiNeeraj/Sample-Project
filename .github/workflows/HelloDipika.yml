@@ -1,0 +1,19 @@
+name: DipikaHello
+
+on:
+  push:
+    branches: [ "Dipika" ]
+  pull_request:
+    branches: [ "Dipika" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run a one-line script
+        run: echo Hello Dipika!
