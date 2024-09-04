@@ -5,6 +5,7 @@ on:
     branches: [ "Achal" ]
   pull_request:
     branches: [ "Achal" ]
+  workflow_dispatch:
 
 jobs:
   build:
